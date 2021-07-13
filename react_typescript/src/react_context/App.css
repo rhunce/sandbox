@@ -1,0 +1,29 @@
+/* body {
+  background-color: darksalmon;
+} */
+
+.btn {
+  border-style: solid;
+  border-radius: 3px;
+  border-width: thin;
+}
+
+.light_btn {
+  color: black;
+  background-color: lightgray;
+  border-color: black;
+}
+
+.dark_btn {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.light_mode_text {
+  color: black;
+}
+
+.dark_mode_text {
+  color: white;
+}
