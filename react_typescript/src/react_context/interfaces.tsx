@@ -3,7 +3,4 @@ export interface ThemeContextInterface {
   themeText: string;
 }
 
-export interface ButtonProps {
-  theme: string,
-  themeText: string
-}
+export interface ButtonProps extends ThemeContextInterface{}

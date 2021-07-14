@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { ButtonProps } from '../interfaces';
 
 export const Button: React.FC<ButtonProps> = ({ theme, themeText }: ButtonProps): JSX.Element => {
-  const [myTheme, setMyTheme] = useState(theme);
-  const [myThemeText, setMyThemeText] = useState(themeText);
+  const [myTheme, setMyTheme] = useState<string>(theme);
+  const [myThemeText, setMyThemeText] = useState<string>(themeText);
 
   const lightMode: boolean = myTheme === 'light';
 
