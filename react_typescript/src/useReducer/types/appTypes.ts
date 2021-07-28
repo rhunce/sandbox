@@ -7,6 +7,9 @@ export type TAction = {
   payload?: any
 }
 
+export type Reducer<TState, TAction> =
+  (state: TState, action: TAction) => TState;
+
 // Lazy initialization
 
 export type TInitialCount = {

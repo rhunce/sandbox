@@ -1,12 +1,12 @@
 import React, { ReactElement, useReducer } from 'react';
 
-import { TAction, TState } from '../types/appTypes';
+import { Reducer, TAction, TState } from '../types/appTypes';
 // Lazy initialization
 // import { TAction, TCounterProps, TInitialCount, TInitialState, TState } from '../types/appTypes';
 
 const initialState: TState = { count: 0 };
 
-function reducer(state: TState, action: TAction): TState {
+const reducer: Reducer<TState, TAction> = (state: TState, action: TAction): TState => {
   switch (action.type) {
     case 'increment':
       return { count: state.count + 1 };
