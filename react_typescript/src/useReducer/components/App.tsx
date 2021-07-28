@@ -1,9 +1,9 @@
-import Counter from './Counter.js';
+import { Counter } from './Counter';
 
 const App = () => {
   return (
     <div>
-      <Counter initialCount={50} />
+      <Counter />
       {/* Lazy initialization */}
       {/* <Counter initialCount={50}/> */}
     </div>
